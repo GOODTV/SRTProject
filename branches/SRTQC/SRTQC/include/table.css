@@ -1,0 +1,500 @@
+﻿/*主選單*/
+#menucontrol{
+	position:fixed;
+	top:32px;
+	left:0px;
+	width:15px;
+	height:60px;
+}
+.hidden{
+	display:none;
+}
+
+
+/* 查詢列 */
+.search{
+	width: inherit;
+	margin:0px 0px 12px 0px;
+	padding:0px;
+	text-align:right;
+	position:relative;
+}
+/* 功能列 */
+.toolbar{
+	margin:0px 0px 12px 0px;
+	padding:0px;
+	text-align:left;
+}
+.toolbar a{
+	display:block;
+	padding:1px;
+	text-decoration:none;
+	width:84px;
+	background:#DCDDDE;
+	border:1px #ccc solid;
+}
+.toolbar a:hover{
+	color:#FFF;
+	text-decoration:none;
+	background:#999;
+	border:1px #666 solid;
+}
+
+.button {
+	display:inline-block;
+	padding:0px;
+	text-decoration:none;
+	width:88px;
+	background:#ffffff url(../images/toolbar_bg.gif) center bottom;
+	border:1px #ccc solid;
+	margin:0px 6px;
+	text-align:center;
+	cursor: pointer;
+	height:26px;
+}
+
+.button:hover{
+	color:#FFF;
+	text-decoration:none;
+	background:#ccc url(../images/toolbar_bg_hover.gif) center bottom;
+	border:1px #666 solid;
+}
+
+/* 資料處理列 */
+.function{
+	width:100%;
+	padding:12px 0px;
+	text-align:center;
+}
+
+/* 系統狀態表格 */
+.table_sys{
+	padding:2px;
+	border:#6CC solid 1px;
+	background:#fff;
+}
+.table_sys th{
+	color:#006;
+	line-height:18px;
+	text-align:right;
+	vertical-align:middle;
+	padding:2px;
+	font-weight:normal;
+	border-bottom:#ccc dotted 1px;
+}
+.table_sys td{
+	border-bottom:#ccc dotted 1px;
+	line-height:18px;
+	vertical-align:middle;
+	padding:2px;
+}
+
+/* 水平資料表格 */
+.table_h{
+	padding:2px;
+	border:#6CC solid 1px;
+	background:#fff;
+}
+.table_h th{
+	color:#006;
+	background:#d8e2e7 url(../images/table_th_bg.gif) repeat-x bottom;
+	line-height:18px;
+	vertical-align:middle;
+	padding:2px;
+	border-bottom:#999 solid 1px;
+}
+.table_h td{
+	border-bottom:#ccc dotted 1px;
+	line-height:18px;
+	vertical-align:middle;
+	padding:2px;
+}
+.table_h tr{
+	color: #666;
+}
+.table_h tr:hover{
+	background:#dedede;
+	color: #333;
+}
+.table_h_nav{
+	background:#c3d4dd;
+	border:none;
+	text-align:center;
+}
+
+/* 垂直資料表格 */
+.table_v{
+	padding:2px;
+	border:#6CC solid 1px;
+	background:#fff;
+	font-size :12px;
+}
+.table_v th{
+	color:#006;
+	background:#c3d4dd;
+	line-height:18px;
+	padding:2px;
+}
+.table_v td{
+	border-bottom:#ccc dotted 1px;
+	line-height:16px;
+	padding:2px;
+}
+
+.table_v_nav{
+	background:#c3d4dd;
+	border:none;
+	text-align:center;
+}
+
+/* 垂直資料表格 */
+.table_v2{
+	padding:2px;
+	border:#6CC solid 1px;
+	background:#fff;
+	font-size :14px;
+}
+.table_v2 th{
+	color:#006;
+	background:#c3d4dd;
+	line-height:18px;
+	padding:2px;
+}
+.table_v2 td{
+	border-bottom:#ccc dotted 1px;
+	line-height:16px;
+	padding:2px;
+}
+
+.table_v2_nav{
+	background:#c3d4dd;
+	border:none;
+	text-align:center;
+}
+/* for  server control, RadioButtonList 會包一層 table,所以 CssClass 要設定 */
+.table_noborder{
+	border:none;
+}
+
+.table_noborder td{
+	border:none;
+}
+
+
+
+/* 頁籤 */
+.tab{
+}
+.tab ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.tab ul li{
+	margin:0;
+	padding:0;
+	display:inline;
+}
+.tab ul li a{
+	color:#666;
+	width:77px;
+	line-height:14px;
+	vertical-align:middle;
+	margin:0px;
+	padding: 5px 5px 5px 15px;
+	display:inline-block;
+	text-decoration:none;
+	background:url(../images/tab_ulli_bg_link.gif) no-repeat;
+}
+.tab ul li a:hover{
+	color:#333;
+	text-decoration:none;
+	background:url(../images/tab_ulli_bg_hover.gif) no-repeat;
+}
+#tab_selected{
+	color:#006;
+	text-decoration:none;
+	background:url(../images/tab_ulli_bg_selected.gif) no-repeat;
+}
+
+/* 頁籤 */
+ul.tabs {
+	width: 100%;
+	border-bottom: solid 1px #999;
+	margin:0;
+	height:25px;
+	padding:0;
+}
+ul.tabs li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 1px -1px 0;
+	border: solid 1px #999;
+	border-left: solid 1px #999;
+}
+ul.tabs li a {
+	display: block;
+	padding: 0 8px;
+	color: #767778;
+	text-decoration: none;
+	background:#dcddde;
+}
+ul.tabs li a:hover {
+	background:#fff;
+	text-decoration: none;
+	color:#006;
+}
+ul.tabs li.active, ul.tabs li.active a  {
+	background: #eee;
+	font-weight:bold;
+	border-bottom: solid 1px #eee;
+	color:#006;
+}
+div.tab_container {
+	clear: left;
+	width: 100%;
+	border:none;
+}
+div.tab_container{
+	padding: 8px 0 0 0;
+}
+div.tab_content {
+	min-height:150px;
+}
+
+/* ==========================================================================*/
+/* 以下為依據需求自訂 */
+.necessary
+{
+    color : red;
+}
+
+.readonly{
+    color: #660000;
+    background-color: #ffffcc;
+    border-width: 1;
+    border-color: #FFFFEC;
+    border-bottom: #000080 1px solid;
+    border-left: #999999 1px solid;
+    border-right: #000080 1px solid;
+    border-top: #999999 1px solid;
+}
+
+
+input.npoButton
+{
+    display:inline-block;
+    width:88px;
+    padding:8px 3px 3px 33px;
+    text-align:left;
+    cursor: pointer;
+    border:1px #ccc solid;
+    font-size:12px;
+}
+
+/*
+GridView 的上下頁
+*/
+.pager a:hover
+{
+    cursor: pointer;
+    text-decoration:none;
+}
+
+
+/*
+功能鍵
+*/
+input.npoButton:hover{
+    color:#FFF;
+    text-decoration:none;
+    background-color:#7f7f7f;
+    border:1px #666 solid;
+}
+
+input.npoButton_Search{
+    background:url(../images/toolbar_search.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_New{
+    background:#dcddde url('../images/toolbar_new.gif') no-repeat 6px 6px;
+    margin-left: 0px;
+}
+
+input.npoButton_Modify{
+    background:url(../images/toolbar_modify.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Del{
+    background:url(../images/toolbar_del.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Exit{
+    background:url(../images/toolbar_exit.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Save{
+    background:url(../images/toolbar_save.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_DelFolder{
+    background:url(../images/toolbar_delfolder.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Download{
+    background:url(../images/toolbar_download.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+
+input.npoButton_Export{
+    background:url(../images/toolbar_export.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_FamilyTree{
+    background:url(../images/toolbar_familytree.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Group{
+    background:url(../images/toolbar_group.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Folder{
+    background:url(../images/toolbar_folder.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_NewFolder{
+    background:url(../images/toolbar_newfolder.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_DelFolder{
+    background:#dcddde url('../images/toolbar_delfolder.gif') no-repeat 6px 6px;
+    margin-left: 0px;
+}
+
+input.npoButton_NextStep{
+    background:url(../images/toolbar_nextstep.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_PrevStep{
+    background:url(../images/toolbar_prevstep.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Print{
+    background:url(../images/toolbar_print.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_pw{
+    background:url(../images/toolbar_pw.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Single{
+    background:url(../images/toolbar_single.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Submit{
+    background:url(../images/toolbar_submit.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Cancel{
+    background:url(../images/toolbar_cancel.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Upload{
+    background:url(../images/toolbar_upload.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Excel{
+    background:#dcddde url('../images/icon_xls.gif') no-repeat 6px 6px;
+    height: 34px;
+}
+
+input.npoButton_Download{
+    background:url(../images/toolbar_download.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+input.npoButton_Txt{
+    background:url(../images/icon_TXT.gif) no-repeat left #dcddde;
+    background-position:6px;
+}
+
+.tabNormal {
+	padding:1px;
+	text-decoration:none;
+	width:120px;
+	background:#ffffff url(../images/toolbar_bg.gif) center bottom;
+	border:1px #ccc solid;
+	margin:0px;
+	text-align:center;
+	cursor: pointer;
+	height:26px;
+}
+
+.tabSelected {
+	padding:1px;
+	text-decoration:none;
+	width:120px;
+	background:#FFFFFF;
+	border:1px #ccc solid;
+	margin:0px;
+	text-align:center;
+	cursor: pointer;
+	height:26px;
+}
+
+
+/* 自訂資料表格 */
+.table_info{
+	padding:2px;
+	border:#C0C0C0 solid 1px;
+	background:#fff;
+	cellspacing:0px;
+	cellpadding:2px;
+	border-collapse: collapse
+}
+.table_info th{
+	color:#111111;
+	background:#FFE1AF;
+	line-height:18px;
+	vertical-align:middle;
+	padding:2px;
+	border:#999 solid 1px;
+}
+.table_info td{
+	border:#ccc solid 1px;
+	line-height:18px;
+	vertical-align:middle;
+	padding:2px;
+}
+.table_info tr{
+	color: #666;
+}
+
+.table_info tr:hover{
+	//background:#dedede;
+	//color: #333;                                                                                      rgb(66,174,59)
+}
+

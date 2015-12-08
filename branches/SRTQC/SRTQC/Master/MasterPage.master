@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Master_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../App_Themes/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Script/JScript.js"></script>
+    <!--引用jQuery核心函式庫-->
+    <script src="../Script/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <!--引用jQuery blockUI套件-->
+    <script src="../Script/jquery.blockUI.js" type="text/javascript"></script>   
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">        
+        <asp:Panel ID="panelFunTitle"  runat="server" Width="100%">
+            <asp:Table ID="Table1" runat="server" Width="100%">
+            <%--
+                <asp:TableRow>
+                    <asp:TableCell HorizontalAlign="Left">
+                        <asp:Image ID="imglogo" runat="server" ImageUrl="~/App_Themes/image/logo.jpg" />
+                        <asp:Label ID="lblSystemTitle" runat="server" Text="主控系統 - SRTQC" ForeColor="#003366" Font-Size="32px" Font-Bold="true" />
+                    </asp:TableCell>
+                </asp:TableRow>
+            --%>
+                <%--<asp:TableRow BackColor="#3399FF">
+                    <asp:TableCell HorizontalAlign="Center">
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow BackColor="#000066">
+                    <asp:TableCell HorizontalAlign="Center">
+                        <asp:Label ID="lblFunTitle" ForeColor="White" Font-Bold="true" Font-Size="16px" runat="server"></asp:Label>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow BackColor="#3399FF">
+                    <asp:TableCell HorizontalAlign="Center">
+                    </asp:TableCell>
+                </asp:TableRow>--%>
+                <%--<asp:TableRow>
+                    <asp:TableCell HorizontalAlign="Right">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/App_Themes/image/user.gif" />
+                        <asp:Label ID="lblLoginUserTitle" runat="server" Text="登入使用者：" 
+                            ForeColor="#663300" style="text-align: center;font-size:11px" />
+                        <asp:Label ID="lblLoginUser" runat="server" ForeColor="#663300" 
+                            style="text-align: center;font-size:11px" />
+                        <asp:Button ID="btnLogOut" runat="server"  Text="登出" OnClick="btnLogOut_Click" 
+                        OnClientClick="if(confirm('是否確定登出系統？')) {return true;} else {return false;}" 
+                        BorderStyle="None" Width="50px" BackColor="#336600" ForeColor="#CCFFFF" />           
+                    </asp:TableCell>
+                </asp:TableRow>--%>
+            </asp:Table>
+        </asp:Panel>        
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">   
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

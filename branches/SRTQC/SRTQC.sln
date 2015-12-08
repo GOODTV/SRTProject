@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SRTQC", "SRTQC\", "{00BAA131-8148-4018-BB51-48AC3272DE2F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{8E536174-A337-4A66-B6A2-003ECF719313}|Core.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SRTQC"
+		Debug.AspNetCompiler.PhysicalPath = "SRTQC\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SRTQC\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SRTQC"
+		Release.AspNetCompiler.PhysicalPath = "SRTQC\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SRTQC\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8888"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8E536174-A337-4A66-B6A2-003ECF719313}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00BAA131-8148-4018-BB51-48AC3272DE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BAA131-8148-4018-BB51-48AC3272DE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BAA131-8148-4018-BB51-48AC3272DE2F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BAA131-8148-4018-BB51-48AC3272DE2F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8E536174-A337-4A66-B6A2-003ECF719313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E536174-A337-4A66-B6A2-003ECF719313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E536174-A337-4A66-B6A2-003ECF719313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E536174-A337-4A66-B6A2-003ECF719313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
